@@ -31,26 +31,27 @@ calculateSupply(59, 1.5);
 
 document.write("<h3>The Geometrizer</h3>")
 
-// Create 2 functions that calculate properties of a circle, using the definitions here.
+function calcCircumfrence(radius) {
+	document.write("The circumference is " + ((radius * 2) * Math.PI) + ".</br>")
+}
+function calcArea(radius) {
+	document.write("The area is " + (Math.PI * (radius * radius)) + ".</br>")
+}
 
-// Create a function called calcCircumfrence:
+calcCircumfrence(10);
+calcArea(10);
 
-// Pass the radius to the function.
-// Calculate the circumference based on the radius, and output "The circumference is NN".
-// Create a function called calcArea:
+document.write("<h3>The Temperature Converter</h3>")
+function celsiusToFahrenheit(celsius) {
+	var fahrenheit = ((celsius * 2) + 30)
+	document.write(celsius + "°C is " + fahrenheit + "°F.</br>")
+}
 
-// Pass the radius to the function.
-// Calculate the area based on the radius, and output "The area is NN".
+celsiusToFahrenheit(10);
 
-// EXERCISE: The Temperature Converter
+function fahrenheitToCelsius(fahrenheit) {
+	var celsius = ((fahrenheit - 32) * 5/9)
+	document.write(fahrenheit + "°F is " + celsius + "°C.</br>")
+}
 
-// It's hot out! Let's make a converter based on the steps here.
-
-// Create a function called celsiusToFahrenheit:
-
-// Store a celsius temperature into a variable.
-// Convert it to fahrenheit and output "NN°C is NN°F".
-// Create a function called fahrenheitToCelsius:
-
-// Now store a fahrenheit temperature into a variable.
-// Convert it to celsius and output "NN°F is NN°C."
+fahrenheitToCelsius(50);
