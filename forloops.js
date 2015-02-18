@@ -13,25 +13,28 @@ var num;
 for (num = 0; num < 11; num++) {
 	document.write(num + " * 9 = " + (num * 9) + "</br>")
 }
-// Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 
-document.write("<h3>The Grade Assigner</h3>")
-
-function assignGrade(grade){
-	if (grade >= 90 ) {
-   		document.write("You got an A!</br>");
-	}else if (grade > 80 && grade < 89) {
-	   document.write("You got an B!</br>");
-	}else if (grade > 70 && grade < 79) {
-	   document.write("You got an C!</br>");
-	}else { (grade > 60 && grade < 69)
-		document.write("You got an D!</br>");
+document.write("<h4>Bonus - Nested Loop</h4>")
+for (a = 1; a <= 10; a++) {
+	for (b = 1; b <= 10; b++) {
+		document.write(a + " * " + b + " = " + (a * b) + "</br>")
 	}
 }
 
-assignGrade(91);
-assignGrade(84);
-assignGrade(72);
-assignGrade(64);
+document.write("<h3>The Grade Assigner</h3>")
+function assignGrade(grade){
+	if (grade >= 90 ) {
+   		return "you got an A!"
+	} else if (grade >= 80 && grade <= 89) {
+	   return "you got a B!"
+	} else if (grade >= 70 && grade <= 79) {
+	   return "you got a C!"
+	} else { (grade >= 60 && grade <= 69)
+		return "you got a D!"
+	}
+}
 
+for (var score = 60; score < 101; score++){
+    document.write("For " + score + ", " + assignGrade(score) + "<br>");  
+}
 

@@ -19,7 +19,6 @@ calculateAge(1982);
 calculateAge(1964);
 
 document.write("<h3>The Lifetime Supply Calculator</h3>")
-
 function calculateSupply(age, amount_per_day){
 	var maxAge = 100
 	document.write("You will need " + ((maxAge - age) * amount_per_day.toFixed()) + " to last you until the ripe old age of " + maxAge + ".</br>")
@@ -30,10 +29,10 @@ calculateSupply(10, 4);
 calculateSupply(59, 1.5);
 
 document.write("<h3>The Geometrizer</h3>")
-
 function calcCircumfrence(radius) {
 	document.write("The circumference is " + ((radius * 2) * Math.PI) + ".</br>")
 }
+
 function calcArea(radius) {
 	document.write("The area is " + (Math.PI * (radius * radius)) + ".</br>")
 }
@@ -47,11 +46,10 @@ function celsiusToFahrenheit(celsius) {
 	document.write(celsius + "°C is " + fahrenheit + "°F.</br>")
 }
 
-celsiusToFahrenheit(10);
-
 function fahrenheitToCelsius(fahrenheit) {
 	var celsius = ((fahrenheit - 32) * 5/9)
 	document.write(fahrenheit + "°F is " + celsius + "°C.</br>")
 }
 
+celsiusToFahrenheit(10);
 fahrenheitToCelsius(50);
