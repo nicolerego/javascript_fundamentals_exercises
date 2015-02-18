@@ -1,27 +1,27 @@
-document.write("<h3>The even/odd reporter</h3>")
+document.write("<h3>The even/odd reporter</h3>");
 var count;
 for (count = 0; count < 21; count++) {
 	if (count % 2 == 0) {
-		document.write(count + " is even" + "</br>")
+		document.write(count + " is even" + "</br>");
 	} else {
-		document.write(count + " is odd" + "</br>")
+		document.write(count + " is odd" + "</br>");
 	}
 }
 
-document.write("<h3>Multiplication Tables</h3>")
+document.write("<h3>Multiplication Tables</h3>");
 var num;
 for (num = 0; num < 11; num++) {
-	document.write(num + " * 9 = " + (num * 9) + "</br>")
+	document.write(num + " * 9 = " + (num * 9) + "</br>");
 }
 
-document.write("<h4>Bonus - Nested Loop</h4>")
+document.write("<h4>Bonus - Nested Loop</h4>");
 for (a = 1; a <= 10; a++) {
 	for (b = 1; b <= 10; b++) {
-		document.write(a + " * " + b + " = " + (a * b) + "</br>")
+		document.write(a + " * " + b + " = " + (a * b) + "</br>");
 	}
 }
 
-document.write("<h3>The Grade Assigner</h3>")
+document.write("<h3>The Grade Assigner</h3>");
 function assignGrade(grade){
 	if (grade >= 90 ) {
    		return "you got an A!"
@@ -37,4 +37,3 @@ function assignGrade(grade){
 for (var score = 60; score < 101; score++){
     document.write("For " + score + ", " + assignGrade(score) + "<br>");  
 }
-

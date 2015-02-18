@@ -1,28 +1,47 @@
-// EXERCISE: The Recipe Card
+document.write("<h3>The Recipe Card</h3>");
+var turkeyTacos = {
+	title: "Turkey Tacos",
+	servings: 4,
+	ingredients: ["Ground turkery", "Taco seasoning", "Corn tortillas", "Avocados", "Cheese"]
+}
+document.write(turkeyTacos.title + "</br>");
+document.write("Serves: " + turkeyTacos.servings + "</br>");
+document.write("Ingredients:</br>");
+document.write(turkeyTacos.ingredients[0] + "</br>" + turkeyTacos.ingredients[1]  + "</br>" + turkeyTacos.ingredients[2] + "</br>" + turkeyTacos.ingredients[3] + "</br>" + turkeyTacos.ingredients[4]);
 
-// Never forget another recipe!
+document.write("<h3>The Reading List</h3>");
+var books = [
+	{title: "Everything is Illuminated",
+	 author: "Jonathan Safran Foer",
+	 alreadyRead: true},
 
-// Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).
-// On separate lines (one console.log statement for each), log the recipe information so it looks like:
-// Mole
-// Serves: 2
-// Ingredients:
-// cinnamon
-// cumin
-// cocoa
+	{title: "The Hobbit",
+	 author: "J.R.R. Tolkien",
+	 alreadyRead: false},
 
-// EXERCISE: The Reading List
+	{title: "The Cell",
+	 author: "Stephen King",
+	 alreadyRead: true}
+];
 
-// Keep track of which books you read and which books you want to read!
+for (var count = 0; count < books.length; count++) {
+	var book = books[count];
+	if (book.alreadyRead === true) {
+		document.write("You already read " + "'" + book.title + "'" + " by " + book.author + ".</br>");
+	} else {
+		document.write("You still need to read " + "'" + book.title + "'" + " by " + book.author + ".</br>");
+	}
+}
 
-// Create an array of objects, where each object describes a book and has properties for the title (a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
-// Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
-// Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
+document.write("<h3>The Movie Database</h3>");
+var favMovie = {
+	title: "Back to The Future",
+	duration: 116,
+	stars: ["Michael J. Fox", " Christopher Lloyd", " Crispin Glover", " Lea Thompson"]
+}
 
-// EXERCISE: The Movie Database
+function printMovie(title, duration, stars){
+	document.write(title + " lasts for " + duration + " minutes. Stars: " + stars + ".");
+}
 
-// It's like IMDB, but much much smaller!
-
-// Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
-// Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
-
+printMovie(favMovie.title, favMovie.duration, favMovie.stars);
