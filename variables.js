@@ -16,7 +16,7 @@ document.write("<h3>The Lifetime Supply Calculator</h3>")
 var currentAge = 22
 var maxAge = 100
 var amountPerDay = 2
-var total = (maxAge - currentAge) * amountPerDay
+var total = (maxAge - currentAge) * (amountPerDay * 365)
 document.write("You will need " + total + " to last you until the ripe old age of " + maxAge + ".</br>")
 
 document.write("<h3>The Geometrizer</h3>")

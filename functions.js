@@ -21,7 +21,7 @@ calculateAge(1964);
 document.write("<h3>The Lifetime Supply Calculator</h3>");
 function calculateSupply(age, amount_per_day){
 	var maxAge = 100
-	document.write("You will need " + ((maxAge - age) * amount_per_day.toFixed()) + " to last you until the ripe old age of " + maxAge + ".</br>");
+	document.write("You will need " + ((maxAge - age) * (365 * amount_per_day.toFixed())) + " to last you until the ripe old age of " + maxAge + ".</br>");
 }
 
 calculateSupply(22, 5);

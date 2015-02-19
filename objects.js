@@ -7,7 +7,9 @@ var turkeyTacos = {
 document.write(turkeyTacos.title + "</br>");
 document.write("Serves: " + turkeyTacos.servings + "</br>");
 document.write("Ingredients:</br>");
-document.write(turkeyTacos.ingredients[0] + "</br>" + turkeyTacos.ingredients[1]  + "</br>" + turkeyTacos.ingredients[2] + "</br>" + turkeyTacos.ingredients[3] + "</br>" + turkeyTacos.ingredients[4]);
+document.write(turkeyTacos.ingredients[0] + "</br>" + turkeyTacos.ingredients[1]  
+	+ "</br>" + turkeyTacos.ingredients[2] + "</br>" + turkeyTacos.ingredients[3] 
+	+ "</br>" + turkeyTacos.ingredients[4]);
 
 document.write("<h3>The Reading List</h3>");
 var books = [
@@ -40,8 +42,8 @@ var favMovie = {
 	stars: ["Michael J. Fox", " Christopher Lloyd", " Crispin Glover", " Lea Thompson"]
 }
 
-function printMovie(title, duration, stars){
-	document.write(title + " lasts for " + duration + " minutes. Stars: " + stars + ".");
+function printMovie(movie){
+	document.write(movie.title + " lasts for " + movie.duration + " minutes. Stars: " + movie.stars + ".");
 }
 
-printMovie(favMovie.title, favMovie.duration, favMovie.stars);
+printMovie(favMovie);
